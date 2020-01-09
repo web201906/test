@@ -1,0 +1,12 @@
+<templateSet group="function">
+  <template name="aa" value="/**&#10; * @Description:&#10; * @Param: $param$&#10; * @Return: $return$&#10; * @Author: $user$ on $DATE$ $TIME$&#10; */" description="add  comment" toReformat="false" toShortenFQNames="true">
+    <variable name="param" expression="methodParameters()" defaultValue="" alwaysStopAt="false" />
+    <variable name="return" expression="methodReturnType()" defaultValue="" alwaysStopAt="false" />
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TIME" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
